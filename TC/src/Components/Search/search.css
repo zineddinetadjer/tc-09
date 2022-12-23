@@ -1,0 +1,22 @@
+.searchBar {
+  padding-left: 2em;
+  width: 20em;
+  background-color: #205375;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border-radius: 10px;
+}
+.pic {
+  height: 2em;
+  width: 2em;
+}
+.pic img {
+  width: 100%;
+}
+.place input {
+  width: 75%;
+  background-color: #205375;
+  border: 0;
+}

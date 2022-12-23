@@ -1,0 +1,21 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.left-side h1 {
+  color: #205375;
+}
+.name {
+  color: #f66b02;
+  font-weight: bold;
+}
+.left-side p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+}
+.right-side {
+  width: 50%;
+}
