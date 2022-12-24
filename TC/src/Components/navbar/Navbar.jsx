@@ -18,7 +18,6 @@ const Navbar = () => {
         <a href="/home">
           <button className="L-btns">Home</button>
         </a>
-        <button className="L-btns">Search</button>
         <button className="L-btns">Sell</button>
       </div>
       <div>

@@ -1,9 +1,10 @@
 import React from "react";
+import Post from "./post/Post";
 
 const Posts = () => {
   return (
     <div>
-      <div></div>
+      <Post />
     </div>
   );
 };

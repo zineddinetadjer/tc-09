@@ -9,7 +9,7 @@ const Search = () => {
         <img src={icon} alt="" />
       </div>
       <div className="place">
-        <input type="text" />
+        <input type="text" placeholder="Search your car" />
       </div>
     </div>
   );
