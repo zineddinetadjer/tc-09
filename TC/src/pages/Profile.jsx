@@ -5,6 +5,10 @@ const Profile = () => {
   return (
     <div className="profile">
       <Navbar location="profil" />
+      <div className="profile-pics">
+        <div className="cover"></div>
+        <div className="pdp"></div>
+      </div>
     </div>
   );
 };

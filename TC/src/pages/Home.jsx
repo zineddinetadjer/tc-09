@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="container">
+      <div className="container1">
         <div className="left-side">
           <h1>
             Welcome to <span className="name">ICAR</span>
@@ -27,7 +27,6 @@ const Home = () => {
           <img src={image} alt="" />
         </div>
       </div>
-      <Posts />
     </div>
   );
 };

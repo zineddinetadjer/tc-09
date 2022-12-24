@@ -51,9 +51,9 @@ a {
 }
 
 .createAcc {
-  display: grid;
-  grid-gap: 25px;
   cursor: pointer;
+  margin-top: 6em;
+  margin-bottom: 4em;
 }
 ::placeholder {
   color: #000;

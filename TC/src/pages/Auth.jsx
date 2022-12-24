@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import "./auth.css";
 
 const Auth = () => {
@@ -28,7 +29,7 @@ const Auth = () => {
                 placeholder="Password"
               />
             </div>
-            <button class="btn">Login</button>
+            <button className="btn">Login</button>
           </div>
         </div>
       ) : (
@@ -70,7 +71,7 @@ const Auth = () => {
             <div className="inpt-container">
               <select className="input">
                 <option className="options" value="">
-                  ALger
+                  Alger
                 </option>
                 <option className="options" value="">
                   Tipaza
@@ -96,7 +97,7 @@ const Auth = () => {
                 </option>
               </select>
             </div>
-            <button class="btn">Create Account</button>
+            <button className="btn">Create Account</button>
             <p>
               By clicking " Create Account " I agree To Icar's{" "}
               <a href=""> TOS </a>&<a href=""> Privacy Policy </a>
