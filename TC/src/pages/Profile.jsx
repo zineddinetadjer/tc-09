@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "../Components/navbar/Navbar";
 
 const Profile = () => {
   return (
-    <div>
-      <div></div>
+    <div className="profile">
+      <Navbar location="profil" />
     </div>
   );
 };
