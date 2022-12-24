@@ -21,7 +21,7 @@ const Post = () => {
       <div>
         <a href="#">Learn more</a>
         <button onClick={handleClick()}>
-          {favorite ? <img src="" /> : <img src={notfav} />}
+          {favorite ? <img src="" /> : <img src="" />}
         </button>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Search from "../Components/Search/Search";
 import image from "../assets/image 1.png";
 import "./home.css";
 import Posts from "../Components/posts/Posts";
+import CreatePost from "./CreatePost";
 
 const Home = () => {
   return (
