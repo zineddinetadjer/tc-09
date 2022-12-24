@@ -13,7 +13,7 @@ const Post = () => {
         <h2>Prix</h2>
       </div>
       <div>
-        <a href="#">Learn more</a>
+        <a href="/details">Learn more</a>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import Navbar from "./Components/navbar/Navbar";
 import CreatePost from "./pages/Createpost/CreatePost";
 import Home from "./pages/Home";
 import Profile from "./pages/profile/Profile";
-import Details from "./pages/Details";
+import Details from "./pages/details/Details";
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 import { useState } from "react";
 import Auth from "./pages/Auth/Auth";
