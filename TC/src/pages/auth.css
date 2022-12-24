@@ -1,0 +1,66 @@
+* {
+  text-align: center;
+}
+.inpt-container {
+  background-color: #d9d9d9;
+  width: 35vw;
+  padding: 10px;
+  margin: 10px auto;
+}
+.input,
+.select {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  text-align: left;
+  width: 90%;
+  font-size: 1.2rem;
+}
+.head {
+  color: #f66b02;
+  margin: 30px 0;
+}
+.signIn {
+  height: calc(100vh - 15em);
+  margin-top: 100px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  height: calc(100% - 25px);
+}
+.btn {
+  border: none;
+  border-radius: 12px;
+  background-color: #f66b02;
+  width: 12.75rem;
+  height: 2.75rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.btn:hover {
+  width: 13.75rem;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.createAcc {
+  display: grid;
+  grid-gap: 25px;
+  cursor: pointer;
+}
+::placeholder {
+  color: #000;
+}
+.signUp {
+  height: calc(100vh - 30px);
+}
+a:hover {
+  color: #f66b02;
+}
