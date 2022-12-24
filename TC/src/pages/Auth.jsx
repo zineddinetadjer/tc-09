@@ -34,22 +34,14 @@ const Auth = () => {
         </div>
       ) : (
         <div className="signUp">
-          <h1 className="head">please create your account</h1>
-          <div className="container">
+          <h1 className="head">Please create your account</h1>
+          <div className="container2">
             <div className="inpt-container">
               <input
                 className="input"
                 type="name"
-                name="Name"
-                placeholder="First Name"
-              />
-            </div>
-            <div className="inpt-container">
-              <input
-                className="input"
-                type="name"
-                name="Name"
-                placeholder="Last Name"
+                name="username"
+                placeholder="Username"
               />
             </div>
             <div className="inpt-container">
@@ -57,7 +49,7 @@ const Auth = () => {
                 className="input"
                 type="email"
                 name="email"
-                placeholder="mail adresse "
+                placeholder="Email"
               />
             </div>
             <div className="inpt-container">
@@ -71,7 +63,7 @@ const Auth = () => {
             <div className="inpt-container">
               <select className="input">
                 <option className="options" value="">
-                  Alger
+                  Algiers
                 </option>
                 <option className="options" value="">
                   Tipaza
@@ -111,9 +103,17 @@ const Auth = () => {
             setUser((prev) => !prev);
           }}
         >
-          {user
-            ? "You don't have an account ? Create Account"
-            : "You already have an account? Login"}
+          {user ? (
+            <p>
+              You don't have an account ?{" "}
+              <span className="highlight">Create an account</span>
+            </p>
+          ) : (
+            <p>
+              You already have an account ?{" "}
+              <span className="highlight">Login</span>
+            </p>
+          )}
         </p>
       </div>
     </>

@@ -3,8 +3,10 @@
 }
 .inpt-container {
   background-color: #d9d9d9;
-  width: 35vw;
+  width: 70%;
   padding: 10px;
+  border-radius: 15px;
+
   margin: 10px auto;
 }
 .input,
@@ -25,11 +27,15 @@
   margin-top: 100px;
 }
 .container {
+  padding-top: 2em;
+  width: 25em;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1em;
   align-items: center;
-  height: calc(100% - 25px);
+  box-shadow: black 2px 2px 10px;
+  margin-left: 35%;
+  border-radius: 15px;
 }
 .btn {
   border: none;
@@ -40,6 +46,7 @@
   font-size: 1.3rem;
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  margin-bottom: 1em;
 }
 .btn:hover {
   width: 13.75rem;
@@ -52,15 +59,27 @@ a {
 
 .createAcc {
   cursor: pointer;
-  margin-top: 6em;
+  margin-top: 3em;
   margin-bottom: 4em;
 }
 ::placeholder {
   color: #000;
 }
-.signUp {
-  height: calc(100vh - 30px);
-}
 a:hover {
   color: #f66b02;
+}
+.inputcontainer {
+  display: flex;
+  gap: 1em;
+}
+.container2 {
+  width: 30em;
+  padding: 2em 2em;
+  box-shadow: black 2px 2px 10px;
+  margin-left: 32%;
+  border-radius: 15px;
+}
+.highlight {
+  color: #f66b02;
+  text-decoration: underline;
 }
