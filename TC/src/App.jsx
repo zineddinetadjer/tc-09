@@ -19,8 +19,8 @@ function App() {
           path="/create"
           element={isSignIn ? <CreatePost /> : <Navigate to="/auth" />}
         />
-        <Route path="/details/:id" element={<Details />} />
-        <Route path="/profile/id" element={<Profile />} />
+        <Route path="/details" element={<Details />} />
+        <Route path="/profile/:id" element={<Profile />} />
       </Routes>
     </div>
   );

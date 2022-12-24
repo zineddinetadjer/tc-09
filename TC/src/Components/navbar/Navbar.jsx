@@ -19,23 +19,17 @@ const Navbar = (location) => {
           <button className="L-btns">Home</button>
         </a>
         <button className="L-btns">Sell</button>
-      </div>
-      <div>
-        {
-          (location = "profil" ? (
-            ""
-          ) : isSignIn ? (
-            <div className="Profile">
-              <div className="profile-pic"></div>
-              <h3>UserName</h3>
-            </div>
-          ) : (
-            <div className="Log">
-              <button id="first">Log In</button>
-              <button>Sign Up</button>
-            </div>
-          ))
-        }
+        {isSignIn ? (
+          <div className="Profile">
+            <div className="profile-pic"></div>
+            <h3>UserName</h3>
+          </div>
+        ) : (
+          <div className="Log">
+            <button id="first">Log In</button>
+            <button>Sign Up</button>
+          </div>
+        )}
       </div>
     </div>
   );
