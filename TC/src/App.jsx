@@ -1,15 +1,15 @@
 import "./App.css";
 import Navbar from "./Components/navbar/Navbar";
-import CreatePost from "./pages/CreatePost";
+import CreatePost from "./pages/Createpost/CreatePost";
 import Home from "./pages/Home";
-import Profile from "./pages/Profile";
+import Profile from "./pages/profile/Profile";
 import Details from "./pages/Details";
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 import { useState } from "react";
-import Auth from "./pages/Auth";
+import Auth from "./pages/Auth/Auth";
 
 function App() {
-  const [isSignIn, setIsSignIn] = useState(false);
+  const [isSignIn, setIsSignIn] = useState(true);
   return (
     <div className="App">
       <Routes>

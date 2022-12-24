@@ -1,12 +1,11 @@
 import React from "react";
-import Navbar from "../Components/navbar/Navbar";
+import Navbar from "../../Components/navbar/Navbar";
 
 const Profile = () => {
   return (
     <div className="profile">
       <Navbar location="profil" />
       <div className="profile-pics">
-        <div className="cover"></div>
         <div className="pdp"></div>
       </div>
     </div>

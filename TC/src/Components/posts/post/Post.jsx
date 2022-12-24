@@ -1,12 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
 const Post = () => {
-  const [favorite, setFavorite] = useState(false);
-
-  const handleClick = () => {
-    setFavorite((prev) => !prev);
-  };
   return (
     <div className="post">
       <div className="picture">
@@ -20,9 +14,6 @@ const Post = () => {
       </div>
       <div>
         <a href="#">Learn more</a>
-        <button onClick={handleClick()}>
-          {favorite ? <img src="" /> : <img src="" />}
-        </button>
       </div>
     </div>
   );

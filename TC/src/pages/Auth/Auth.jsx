@@ -4,6 +4,16 @@ import "./auth.css";
 
 const Auth = () => {
   const [user, setUser] = useState(true);
+  const [data, setData] = useState({
+    username: "",
+    email: "",
+    password: "",
+    wilaya: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       {user ? (
@@ -89,7 +99,9 @@ const Auth = () => {
                 </option>
               </select>
             </div>
-            <button className="btn">Create Account</button>
+            <button className="btn" type="submit" onClick={handleSubmit()}>
+              Create Account
+            </button>
             <p>
               By clicking " Create Account " I agree To Icar's{" "}
               <a href=""> TOS </a>&<a href=""> Privacy Policy </a>

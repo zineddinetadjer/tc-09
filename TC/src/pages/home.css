@@ -2,12 +2,15 @@
   font-family: "Open Sans", sans-serif;
 }
 .left-side {
-  padding-left: 2em;
+  margin-left: 5em;
+  padding-left: 5em;
 }
 .left-side h1 {
   color: #205375;
+  font-size: 2em;
   margin-top: 3em;
   margin-bottom: 1em;
+  text-align: left;
 }
 .name {
   color: #f66b02;
@@ -17,16 +20,36 @@
   font-size: 1.5em;
   margin-bottom: 2em;
   font-weight: bold;
+  text-align: left;
 }
 .container1 {
   margin-top: 3em;
   display: flex;
 }
 .right-side {
-  margin-top: 1em;
+  margin-top: 7em;
   margin-left: 10em;
   width: 50%;
 }
 .right-side img {
-  width: 100%;
+  width: 75%;
+}
+.big-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.more1 {
+  margin-top: -15px;
+  cursor: pointer;
+}
+.more {
+  width: 5em;
+  cursor: pointer;
+}
+.explore {
+  margin-top: 2em;
+  margin-bottom: 0.25em;
+  color: #f66b02;
+  cursor: pointer;
 }

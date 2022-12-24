@@ -1,6 +1,6 @@
 .searchBar {
-  padding-left: 2em;
-  width: 20em;
+  padding-left: 0.5em;
+  width: 40em;
   background-color: #205375;
   height: 3em;
   display: flex;
@@ -15,8 +15,13 @@
 .pic img {
   width: 100%;
 }
+.place {
+  width: 90%;
+}
 .place input {
-  width: 75%;
+  width: 90%;
   background-color: #205375;
   border: 0;
+  outline: 0;
+  text-align: left;
 }

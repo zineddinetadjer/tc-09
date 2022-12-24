@@ -25,6 +25,7 @@
   border: 0;
   background-color: transparent;
   font-family: "Open Sans", sans-serif;
+  cursor: pointer;
 }
 .Log button {
   padding: 1em 2em;
@@ -32,6 +33,7 @@
   border: 0;
   background-color: transparent;
   font-family: "Open Sans", sans-serif;
+  cursor: pointer;
 }
 #first {
   background-color: #f66b02;
