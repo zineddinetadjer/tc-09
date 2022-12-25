@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./auth.css";
 import axios from "axios";
+import Select from "react-select";
 
 const Auth = () => {
   const initialState = {
@@ -9,7 +10,15 @@ const Auth = () => {
     email: "",
     password: "",
     wilaya: "",
+    phone: "",
   };
+  const options = [
+    { value: "Algiers", label: "Algiers" },
+    { value: "Tipaza", label: "Tipaza" },
+    { value: "Boumerdes", label: "Boumerdes" },
+    { value: "Blida", label: "Blida" },
+    { value: "Jijel", label: "Jijel" },
+  ];
 
   const [user, setUser] = useState(true);
 
@@ -24,12 +33,11 @@ const Auth = () => {
     console.log(e);
     axios
       .post("http://127.0.0.1:5000/accounts", {
-        username: body.username,
-        email: body.email,
-        password: body.password,
-        wilaya: body.wilaya,
-        photo: "hgf",
-        phone: "00",
+        username: form.username,
+        email: form.email,
+        password: form.password,
+        wilaya: form.wilaya,
+        phone: form.phone,
       })
       .then((res) => {
         console.log(res);
@@ -69,14 +77,14 @@ const Auth = () => {
       ) : (
         <div className="signUp">
           <h1 className="head">Please create your account</h1>
-          <div className="container2">
+          <form className="container2">
             <div className="inpt-container">
               <input
                 className="input"
                 type="name"
                 name="username"
                 placeholder="Username"
-                handleChange={handleChange}
+                onChange={handleChange}
               />
             </div>
             <div className="inpt-container">
@@ -85,7 +93,16 @@ const Auth = () => {
                 type="email"
                 name="email"
                 placeholder="Email"
-                handleChange={handleChange}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="inpt-container">
+              <input
+                className="input"
+                type="tel"
+                name="tel"
+                placeholder="Numéro de téléphone"
+                onChange={handleChange}
               />
             </div>
             <div className="inpt-container">
@@ -94,37 +111,11 @@ const Auth = () => {
                 type="password"
                 name="password"
                 placeholder="Password"
-                handleChange={handleChange}
+                onChange={handleChange}
               />
             </div>
             <div className="inpt-container">
-              <select className="input">
-                <option className="options" value="Algiers">
-                  Algiers
-                </option>
-                <option className="options" value="Tipaza">
-                  Tipaza
-                </option>
-                <option className="options" value="Constantine">
-                  Constantine
-                </option>
-                <option className="options" value="Blida">
-                  Blida
-                </option>
-                <option className="options" value="Adrar">
-                  Adrar
-                </option>
-                <option
-                  className="optio
-                ns"
-                  value="Ain Timouchent"
-                >
-                  Ain Timouchent
-                </option>
-                <option className="options" value="Oran">
-                  Oran
-                </option>
-              </select>
+              <Select options={options} />
             </div>
             <button
               className="btn"
@@ -137,7 +128,7 @@ const Auth = () => {
               By clicking " Create Account " I agree To Icar's{" "}
               <a href=""> TOS </a>&<a href=""> Privacy Policy </a>
             </div>
-          </div>
+          </form>
         </div>
       )}
       <div className="createAcc">

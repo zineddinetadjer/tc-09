@@ -18,7 +18,9 @@ const Navbar = (location) => {
         <a href="/home">
           <button className="L-btns">Home</button>
         </a>
-        <button className="L-btns">Sell</button>
+        <Link to="/create">
+          <button className="L-btns">Sell</button>
+        </Link>
         {isSignIn ? (
           <div className="Profile">
             <div className="profile-pic"></div>
@@ -26,8 +28,12 @@ const Navbar = (location) => {
           </div>
         ) : (
           <div className="Log">
-            <button id="first">Log In</button>
-            <button>Sign Up</button>
+            <Link to="/auth">
+              <button id="first">Log In</button>
+            </Link>
+            <Link to="/auth">
+              <button>Sign Up</button>
+            </Link>
           </div>
         )}
       </div>

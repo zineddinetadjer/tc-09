@@ -10,6 +10,7 @@ const Posts = () => {
     axios
       .get("http://127.0.0.1:5000/posts")
       .then((response) => response.json().then((data) => setPosts(data.posts)));
+    console.log(posts);
   }, []);
 
   return <div>{posts}</div>;
