@@ -5,7 +5,6 @@ import image from "../assets/image 1.png";
 import more from "../Components/images/Vector.png";
 import "./home.css";
 import Posts from "../Components/posts/Posts";
-import CreatePost from "./Createpost/CreatePost";
 
 const Home = () => {
   return (
@@ -32,6 +31,12 @@ const Home = () => {
         <img src={more} alt="" className="more" />
         <img src={more} alt="" className="more1 more" />
       </div>
+      <div>
+        <select>
+          <option value=""></option>
+        </select>
+      </div>
+      <Posts />
     </div>
   );
 };

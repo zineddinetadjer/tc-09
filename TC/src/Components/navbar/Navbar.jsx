@@ -15,7 +15,7 @@ const Navbar = (location) => {
         </a>
       </div>
       <div className="links">
-        <a href="/home">
+        <a href="./home">
           <button className="L-btns">Home</button>
         </a>
         <Link to="/create">
